@@ -9,6 +9,6 @@ def convert(string: str) -> str:
     result = ''.join([ el.lower() if el.isalpha() else '_' for el in string])
     return result
 
-string_to_convert = 'Linked Lists - Sorted Insert'
+string_to_convert = 'Can you get the loop?'
 
 print(convert(string_to_convert))
