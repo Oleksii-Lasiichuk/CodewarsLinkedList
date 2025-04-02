@@ -6,9 +6,9 @@ converts it to normal title for a folder
 
 
 def convert(string: str) -> str:
-    result = ''.join([ el.lower() if el != ' ' else '_' for el in string])
+    result = ''.join([ el.lower() if el.isalpha() else '_' for el in string])
     return result
 
-string_to_convert = 'Parse a linked list from a string'
+string_to_convert = 'Linked Lists - Move Node'
 
 print(convert(string_to_convert))
